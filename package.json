@@ -1,5 +1,5 @@
 {
-  "name": "express-gen-javascript",
+  "name": "expressjs-generator-javascript",
   "version": "1.0.0",
   "description": "a powerful CLI tool to create expressjs projects from CLI",
   "main": "src/index.js",
@@ -22,7 +22,7 @@
     "expressjs-ejs-cli"
   ],
   "author": "https://github.com/alejandro0619 | spaghetticodedev@gmail.com",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "dependencies": {
     "arg": "^5.0.0",
     "chalk": "^4.1.0",
