@@ -1,11 +1,11 @@
 {
-  "name": "express-ejs-cli",
-  "version": "1.0.1",
+  "name": "express-gen-javascript",
+  "version": "1.0.0",
   "description": "a powerful CLI tool to create expressjs projects from CLI",
   "main": "src/index.js",
   "bin": {
-    "@your_npm_username/create-project": "bin/expressjs-gen",
-    "create-project": "bin/expressjs-gen"
+    "@your_npm_username/create-project": "bin/create-projext",
+    "create-project": "bin/create-project"
   },
   "publishConfig": {
     "access": "public"
