@@ -1,6 +1,6 @@
 {
   "name": "express-gen-javascript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a powerful CLI tool to create expressjs projects from CLI",
   "main": "src/index.js",
   "bin": {
