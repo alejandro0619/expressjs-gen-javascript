@@ -1,0 +1,33 @@
+{
+  "name": "expressjs-ejs-cli",
+  "version": "1.0.0",
+  "description": "a powerful tool to create expressjs projects from CLI",
+  "main": "index.js",
+  "bin": {
+    "@your_npm_username/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "scripts": {},
+  "keywords": [
+    "expressjs",
+    "ejs",
+    "expressjs-ejs-cli"
+  ],
+  "author": "https://github.com/alejandro0619 | spaghetticodedev@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "execa": "^4.1.0",
+    "inquirer": "^7.3.3",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ]
+}
