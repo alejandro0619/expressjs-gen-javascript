@@ -4,8 +4,8 @@
   "description": "a powerful tool to create expressjs projects from CLI",
   "main": "src/index.js",
   "bin": {
-    "@spaghetticodedev/express-gen": "bin/express-gen",
-    "express-gen": "bin/express-gen"
+    "@spaghetticodedev/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
   },
   "publishConfig": {
     "access": "public"

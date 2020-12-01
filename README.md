@@ -17,7 +17,7 @@ npm install -g express-gen-javascript
 Linux:
 ```bash
 > mkdir [Project's name] && cd [Project's name]
-> express-gen
+> create-project
 > [select your template option]
 > npm install
 > npm start
@@ -26,7 +26,7 @@ Windows:
 ```bash
 Move to the dir that you want to generate the template:
 
-> express-gen
+> create-project
 > [select your template option]
 > npm install
 > npm start
