@@ -5,7 +5,7 @@
 ![Javascript badge](https://github.com/aleen42/badges/raw/master/src/javascript.svg)
 ![Nodejs badge](https://github.com/aleen42/badges/raw/master/src/node.svg)
 [![Npm badge](https://github.com/aleen42/badges/raw/master/src/npm.svg)](https://www.npmjs.com/package/expressjs-gen-javascript)
-[![github](https://aleen42.github.io/badges/src/github.svg)](https://github.com/alejandro0619/express-gen-cli)
+[![github](https://aleen42.github.io/badges/src/github.svg)](https://github.com/alejandro0619/expressjs-gen-cli)
 
 ## Global installation:
 ```bash
