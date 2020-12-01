@@ -47,8 +47,6 @@ Example:
 ![](./docs/terminal.png)
 
 ![](./docs/templateroute.png)
-## To run your project template:
-
 
 
 ## Have problems? [Open a issue!](https://github.com/alejandro0619/express-generator-javascript/issue)
