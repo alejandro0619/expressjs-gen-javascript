@@ -78,6 +78,6 @@ export async function createProject(options) {
  ]);
 
  await tasks.run();
- console.log('%s Project ready', chalk.green.bold('DONE'));
+  console.log(`%s Project ready if you didn't install dependencies, please npm install and then npm start (localhost:5000)`, chalk.green.bold('DONE'));
  return true;
 }

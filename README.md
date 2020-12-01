@@ -1,22 +1,39 @@
 # expressjs-generator-javascript
-## A powerful CLI tool to bootstrap express.js - mongodb projects!
+### A powerful CLI tool to bootstrap express.js - mongodb projects!
 
-This repository has never been tested in Windows envrioment*
-## Clone:
+
+![Javascript badge](https://github.com/aleen42/badges/raw/master/src/javascript.svg)
+![Nodejs badge](https://github.com/aleen42/badges/raw/master/src/node.svg)
+[![Npm badge](https://github.com/aleen42/badges/raw/master/src/npm.svg)](https://www.npmjs.com/package/expressjs-gen-javascript)
+[![github](https://aleen42.github.io/badges/src/github.svg)](https://github.com/alejandro0619/express-gen-cli)
+
+## Global installation:
 ```bash
-git clone https://github.com/alejandro0619/express-ejs-cli.git
-```
-## Install your dependencies:
-```bash
-npm i
+npm install -g express-gen-javascript
+(In OS like Linux npm global installation requires root permissions)
 ```
 
-### link it:
+## Creating a project:
+Linux:
+```bash
+> mkdir [Project's name] && cd [Project's name]
+> express-gen
+> [select your template option]
+> npm install
+> npm start
 ```
-npm link
-(you must be sudo in Linux )
+Windows:
+```bash
+Move to the dir that you want to generate the template:
+
+> express-gen
+> [select your template option]
+> npm install
+> npm start
 ```
+
 ### Example using all flags:
+Linux:
 ```bash
 mkdir test1
 
@@ -32,10 +49,7 @@ Example:
 ![](./docs/templateroute.png)
 ## To run your project template:
 
-```nodejs
-npm start
-(Note that the server is running in port 5000, but you can change it at: src/index.js to avoid any conflits)
-```
+
 
 ## Have problems? [Open a issue!](https://github.com/alejandro0619/express-generator-javascript/issue)
 
