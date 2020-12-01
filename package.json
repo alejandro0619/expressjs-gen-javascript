@@ -1,10 +1,10 @@
 {
-  "name": "expressjs-generator-javascript",
+  "name": "expressjs-gen-javascript",
   "version": "1.0.0",
   "description": "a powerful CLI tool to create expressjs projects from CLI",
   "main": "src/index.js",
   "bin": {
-    "@your_npm_username/create-project": "bin/create-projext",
+    "@spaghetticodedev/create-project": "bin/create-projext",
     "create-project": "bin/create-project"
   },
   "publishConfig": {
