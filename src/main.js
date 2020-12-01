@@ -6,7 +6,7 @@ import { promisify } from 'util';
 import execa from 'execa';
 import Listr from 'listr';
 import { projectInstall } from 'pkg-install';
-
+import os from 'os'
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
@@ -33,17 +33,24 @@ export async function createProject(options) {
    targetDirectory: options.targetDirectory || process.cwd()
  };
 
- const templateDir = path.resolve(
+
+ let templateDir;
+
+ if(os.type() == 'Windows_NT'){
+   templateDir =  path.join(__dirname, "..", "templates");
+    options.templateDirectory = templateDir
+ } else{
+   templateDir = path.resolve(
    new URL(import.meta.url).pathname,
    '../../templates',
-   options.template
- );
- options.templateDirectory = templateDir;
+   options.template)
+   templateDirectory = templateDir
+ }
 
  try {
    await access(templateDir, fs.constants.F_OK);
  } catch (err) {
-   console.error('%s Invalid template name', chalk.red.bold('ERROR'));
+   console.error(`%s Invalid template name: ${err}`, chalk.red.bold('ERROR'));
    process.exit(1);
  }
 
