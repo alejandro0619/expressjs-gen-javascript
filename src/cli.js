@@ -1,6 +1,7 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
 import { createProject } from './main';
+
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
     {
@@ -34,7 +35,7 @@ async function promptForMissingOptions(options) {
  let testpath = path.resolve(
    new URL(import.meta.url).pathname,
    '\..\templates'
- ),
+ )
  const questions = [];
  if (!options.template) {
    questions.push({
