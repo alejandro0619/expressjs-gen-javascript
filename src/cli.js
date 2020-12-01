@@ -31,13 +31,16 @@ async function promptForMissingOptions(options) {
      template: options.template || defaultTemplate,
    };
  }
-
+ let testpath = path.resolve(
+   new URL(import.meta.url).pathname,
+   '\..\templates'
+ ),
  const questions = [];
  if (!options.template) {
    questions.push({
      type: 'list',
      name: 'template',
-     message: console.console.log(import.meta.url).pathname ;,
+     message: testpath
      choices: ['express-mongo'],
      default: defaultTemplate,
    });
