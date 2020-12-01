@@ -10,7 +10,7 @@ import { projectInstall } from 'pkg-install';
 const access = promisify(fs.access);
 const copy = promisify(ncp); 
 
-let pathTemplateNeeded = path.join(dirname, '../../templates');
+let pathTemplateNeeded = path.join(__dirname, '../../templates');
 async function copyTemplateFiles(options) {
  return copy(options.templateDirectory, options.targetDirectory, {
    clobber: false,
