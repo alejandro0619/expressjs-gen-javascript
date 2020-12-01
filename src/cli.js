@@ -41,7 +41,7 @@ async function promptForMissingOptions(options) {
    questions.push({
      type: 'list',
      name: 'template',
-     message: testpath
+     message: testpath,
      choices: ['express-mongo'],
      default: defaultTemplate,
    });
