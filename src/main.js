@@ -44,7 +44,7 @@ export async function createProject(options) {
    new URL(import.meta.url).pathname,
    '../../templates',
    options.template)
-   templateDirectory = templateDir
+   options.templateDirectory = templateDir
  }
 
  try {
