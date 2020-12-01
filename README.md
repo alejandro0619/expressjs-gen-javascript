@@ -1,26 +1,20 @@
 # expressjs-generator-javascript
 ## A powerful CLI tool to bootstrap express.js - mongodb projects!
 
-## Global Installation:
+This repository has never been tested in Windows envrioment*
+## Clone:
 ```bash
-npm i -g expressjs-generator-javascript
+git clone https://github.com/alejandro0619/express-ejs-cli.git
 ```
-## Create your template  by typing:
+## Install your dependencies:
 ```bash
-create-project 
+npm i
 ```
 
-## There's a few options that you can add in to skip choises:
-```bash
-create-project express-mongo 
+### link it:
 ```
-To skip manual install:
-```bash
---install or -i
-```
-To skip manual git init:
-```bash
---git or -g
+npm link
+(you must be sudo in Linux )
 ```
 ### Example using all flags:
 ```bash
@@ -34,18 +28,13 @@ npm start
 ```
 Example:
 ![](./docs/terminal.png)
-Browser at localhost:5000/
+
 ![](./docs/templateroute.png)
 ## To run your project template:
 
 ```nodejs
 npm start
 (Note that the server is running in port 5000, but you can change it at: src/index.js to avoid any conflits)
-```
-
-## Clone this repository and make it fit to your project's measure:
-```bash
-git clone https://github.com/alejandro0619/express-generator-javascript.git
 ```
 
 ## Have problems? [Open a issue!](https://github.com/alejandro0619/express-generator-javascript/issue)

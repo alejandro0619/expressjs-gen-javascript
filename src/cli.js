@@ -1,6 +1,7 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
 import { createProject } from './main';
+const path = require('path');
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
@@ -32,16 +33,12 @@ async function promptForMissingOptions(options) {
      template: options.template || defaultTemplate,
    };
  }
- let testpath = path.resolve(
-   new URL(import.meta.url).pathname,
-   '\..\templates'
- )
  const questions = [];
  if (!options.template) {
    questions.push({
      type: 'list',
      name: 'template',
-     message: testpath,
+     message: 'Choose your template',
      choices: ['express-mongo'],
      default: defaultTemplate,
    });
