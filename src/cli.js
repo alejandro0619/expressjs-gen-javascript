@@ -37,7 +37,7 @@ async function promptForMissingOptions(options) {
    questions.push({
      type: 'list',
      name: 'template',
-     message: 'Please choose which project template to use',
+     message: console.console.log(import.meta.url).pathname ;,
      choices: ['express-mongo'],
      default: defaultTemplate,
    });
