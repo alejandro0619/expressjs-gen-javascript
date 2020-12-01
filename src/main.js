@@ -8,8 +8,9 @@ import Listr from 'listr';
 import { projectInstall } from 'pkg-install';
 
 const access = promisify(fs.access);
-const copy = promisify(ncp);
+const copy = promisify(ncp); 
 
+let pathTemplateNeeded = path.join(dirname, '../../templates');
 async function copyTemplateFiles(options) {
  return copy(options.templateDirectory, options.targetDirectory, {
    clobber: false,
@@ -34,7 +35,7 @@ export async function createProject(options) {
 
  const templateDir = path.resolve(
    new URL(import.meta.url).pathname,
-   '../../templates',
+   pathTemplateNeeded,
    options.template
  );
  options.templateDirectory = templateDir;
